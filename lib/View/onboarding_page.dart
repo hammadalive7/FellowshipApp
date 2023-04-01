@@ -6,8 +6,17 @@ class OnBoardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('OnBoarding Page'),
+      ),
       body: Center(
-        child: Text('OnBoarding Page'),
-      ),);
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, '/home');
+          },
+          child: const Text('This is a test Button'),
+        ),
+      ),
+    );
   }
 }
