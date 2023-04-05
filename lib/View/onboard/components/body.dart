@@ -105,7 +105,7 @@ class _BodyState extends State<Body> {
                       horizontal: getProportionateScreenWidth(20)),
                   child: Column(
                     children: <Widget>[
-                      Spacer(),
+                      const Spacer(),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: List.generate(
@@ -124,7 +124,7 @@ class _BodyState extends State<Body> {
                                   child:GestureDetector(
                                     onTap:(){
                                       _controller.nextPage(
-                                        duration: Duration(milliseconds: 200),
+                                        duration: const Duration(milliseconds: 200),
                                         curve: Curves.bounceIn,
                                       );
                                   },

@@ -57,6 +57,11 @@ dev_dependencies:
 flutter_native_splash:
   color: "#FFFFFF"
   image: assets/images/logo.png
+
+#native splash screen for android 12 and above
+  android_12:
+    color: "#FFFFFF"
+#    image: assets/images/logo.png
 flutter:
 
   # The following line ensures that the Material Icons font is
