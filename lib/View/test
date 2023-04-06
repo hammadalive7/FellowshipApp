@@ -1,0 +1,312 @@
+
+  late Material materialButton;
+  late int index;
+
+
+  final onboardingPagesList = [
+    PageModel(
+      widget: SingleChildScrollView(
+        controller: ScrollController(),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Align(
+                  alignment: Alignment.topRight,
+                  child:Padding(
+                    padding:  const EdgeInsets.symmetric(vertical: 52.0,horizontal:36  ),
+                       child:GestureDetector(
+                           onTap:(){
+                             //navigate to signin page
+                           },
+                             child:const Text('Skip',
+                               style: TextStyle(color:accent,
+                                   fontWeight: FontWeight.w700,
+                                   fontSize: 24
+                               ),)
+                     ),
+                  ),
+                )
+              ],
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: Align(
+                alignment: Alignment.center,
+                child: Text(
+                  'Introduction',
+                  style: TextStyle(color:accent,
+                  fontWeight: FontWeight.w700,
+                    fontSize: 32
+                  ),
+                  // style: Theme.of(context).textTheme.bodyLarge.copyWith(fontSize: 32),
+                ),
+              ),
+            ),
+            Container(
+                width:85,
+                height: 4,
+                margin: const EdgeInsets.only(
+                    bottom: 25
+                ),
+                decoration: const BoxDecoration(
+                  color:primary,
+                borderRadius: BorderRadius.all(Radius.circular(3)),
+                    ),
+                ),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                  horizontal: 45.0,vertical: 30
+              ),
+              child: Image.asset('lib/assets/onboard1.png',
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 45.0, vertical: 10.0),
+              child: Align(
+                alignment: Alignment.center,
+                child: Text('Welcome to Bytewise Limited which is a  talented development & community wing aiming towards growth of digital world!',
+                  style: TextStyle(color:accent,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 16
+                  ),
+                  textAlign: TextAlign.center,
+
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ),  PageModel(
+      widget: SingleChildScrollView(
+        controller: ScrollController(),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Align(
+                  alignment: Alignment.topRight,
+                  child:Padding(
+                    padding:  const EdgeInsets.symmetric(vertical: 52.0,horizontal:36  ),
+                       child:GestureDetector(
+                           onTap:(){
+                             //navigate to signin page
+                           },
+                             child:const Text('Skip',
+                               style: TextStyle(color:accent,
+                                   fontWeight: FontWeight.w700,
+                                   fontSize: 24
+                               ),)
+                     ),
+                  ),
+                )
+              ],
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: Align(
+                alignment: Alignment.center,
+                child: Text(
+                  'Fellowship',
+                  style: TextStyle(color:accent,
+                  fontWeight: FontWeight.w700,
+                    fontSize: 32
+                  ),
+                  // style: Theme.of(context).textTheme.bodyLarge.copyWith(fontSize: 32),
+                ),
+              ),
+            ),
+             Container(
+                width:85,
+                height: 4,
+                margin:  const EdgeInsets.only(
+                    bottom: 25
+                ),
+                decoration: const BoxDecoration(
+                  color:primary,
+                  borderRadius: BorderRadius.all(Radius.circular(3)),
+                ),
+              ),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                  horizontal: 45.0,vertical: 30
+              ),
+              child: Image.asset('lib/assets/onboard2.png',
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 45.0, vertical: 10.0),
+              child: Align(
+                alignment: Alignment.center,
+                child: Text('Welcome to Bytewise Limited which is a  talented development & community wing aiming towards growth of digital world!',
+                  style: TextStyle(color:accent,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 16
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ),
+   PageModel(
+      widget: SingleChildScrollView(
+        controller: ScrollController(),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Align(
+                  alignment: Alignment.topRight,
+                  child:Padding(
+                    padding:  const EdgeInsets.symmetric(vertical: 52.0,horizontal:36  ),
+                       child:GestureDetector(
+                           onTap:(){
+                             //navigate to signin page
+                           },
+                             child:const Text('Skip',
+                               style: TextStyle(color:accent,
+                                   fontWeight: FontWeight.w700,
+                                   fontSize: 24
+                               ),)
+                     ),
+                  ),
+                )
+              ],
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: Align(
+                alignment: Alignment.center,
+                child: Text(
+                  'Job Offers',
+                  style: TextStyle(color:accent,
+                  fontWeight: FontWeight.w700,
+                    fontSize: 32
+                  ),
+                   ),
+              ),
+            ),
+
+               Container(
+                width:85,
+                height: 4,
+                margin: const EdgeInsets.only(
+                  bottom: 25
+                  ),
+                decoration: const BoxDecoration(
+                  color:primary,
+                  borderRadius: BorderRadius.all(Radius.circular(3)),
+                ),
+              ),
+
+
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                  horizontal: 45.0,vertical: 30
+              ),
+              child: Image.asset('lib/assets/onboard3.png',
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 45.0, vertical: 10.0),
+              child: Align(
+                alignment: Alignment.center,
+                child: Text('Welcome to Bytewise Limited which is a  talented development & community wing aiming towards growth of digital world!',
+                  style: TextStyle(color:accent,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 16
+                  ),
+                  textAlign: TextAlign.center,
+
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ),
+
+  ];
+
+  @override
+  void initState() {
+    super.initState();
+    index = 0;
+  }
+
+
+void _nextPage(){
+    index=index+1;
+}
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: defaultTheme,
+      home: Scaffold(
+        body: Onboarding(
+          pages: onboardingPagesList,
+          onPageChange: (int pageIndex) {
+            index = pageIndex;
+          },
+          startPageIndex: 0,
+          footerBuilder: (context, dragDistance, pagesLength, setIndex) {
+            return
+              Container(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      CustomIndicator(
+                        netDragPercent: dragDistance,
+                        pagesLength: pagesLength,
+                          indicator: Indicator(
+                            indicatorDesign: IndicatorDesign.line(
+                              lineDesign: LineDesign(
+                                lineType: DesignType.line_nonuniform,
+                              ),
+                            ),
+                          ),
+                      ),
+                        Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Align(
+                            alignment: Alignment.bottomRight,
+                            child:Padding(
+                              padding:  const EdgeInsets.symmetric(vertical: 42.0,horizontal:36  ),
+                              child:GestureDetector(
+                                  onTap:_nextPage,
+                                  child:const Icon(Icons.arrow_forward_rounded,
+                                      size: 50,
+                                      color: primary
+                                  )
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  // ),
+                ),
+              );
+          },
+        ),
+      ),
+    );
+  }

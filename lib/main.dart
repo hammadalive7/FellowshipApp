@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './theme/theme_data.dart';
-import 'View/onboarding_page.dart';
+import 'View/onboard/onboarding_page.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() {
