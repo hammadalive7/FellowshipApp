@@ -20,7 +20,7 @@ class LoginPage extends StatelessWidget {
             // mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 20),
+              SizedBox(height: 30),
               Text(
                 "Email Address or Username",
                 style: TextStyle(
