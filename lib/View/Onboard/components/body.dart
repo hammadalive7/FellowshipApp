@@ -1,3 +1,4 @@
+import 'package:fellowship_app/View/login/login_page.dart';
 import 'package:flutter/material.dart';
 import '../../../components/size_config.dart';
 import '../../../theme/colors.dart';
@@ -63,10 +64,10 @@ class _BodyState extends State<Body> {
                             horizontal: getProportionateScreenWidth(20)),
                         child:GestureDetector(
                             onTap:(){
-                              // Navigator.pushReplacement(
-                              //             context,
-                              //             MaterialPageRoute(
-                              // builder: (context) => HomeScreen()));
+                              Navigator.pushReplacement(
+                                          context,
+                                          MaterialPageRoute(
+                              builder: (context) => const LoginPage()));
                             },
                             child:const Text('Skip',
                               style: TextStyle(
@@ -152,12 +153,12 @@ class _BodyState extends State<Body> {
 
   AnimatedContainer buildDot({int? index}) {
     return AnimatedContainer(
-      duration: Duration(milliseconds: 200),
-      margin: EdgeInsets.only(right: 5),
+      duration: const Duration(milliseconds: 200),
+      margin: const EdgeInsets.only(right: 5),
       height: 6,
       width: currentPage == index ? 40 : 15,
       decoration: BoxDecoration(
-        color: currentPage == index ? Theme.of(context).colorScheme.primary : Color(0xFFD8D8D8),
+        color: currentPage == index ? Theme.of(context).colorScheme.primary : const Color(0xFFD8D8D8),
         borderRadius: BorderRadius.circular(3),
       ),
     );
