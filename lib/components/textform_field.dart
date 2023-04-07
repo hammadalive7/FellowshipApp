@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-TextFormField CustomTextFormField(String Hinttext, bool TrailingIcon){
+TextFormField CustomTextFormField(String hintText, bool trailingIcon){
   return TextFormField(
     validator: (value) {
       if (value == null || value.isEmpty) {
@@ -11,12 +11,12 @@ TextFormField CustomTextFormField(String Hinttext, bool TrailingIcon){
     decoration:  InputDecoration(
       // prefixIcon: LeadingIcon ? Icon(Icons.lock) : null,
 
-      suffixIcon: TrailingIcon ? Icon(Icons.lock_open_outlined) : null,
-      border: OutlineInputBorder(
+      suffixIcon: trailingIcon ? const Icon(Icons.lock_open_outlined) : null,
+      border: const OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(10)),
       ),
       // labelText: 'Email',
-      hintText: Hinttext,
+      hintText: hintText,
       hintStyle: const TextStyle(
         fontFamily: 'Helvetica Now Display',
         fontStyle: FontStyle.normal,
@@ -52,12 +52,12 @@ Widget LoginOutlinebutton(String button1Text,String button2Text, Function onPres
               // mainAxisAlignment: MainAxisAlignment.center,
               children: [
 
-                Container(
+                SizedBox(
                     // color: Colors.green,
                     width: 80,
                     child: Center(child: Image.asset("assets/images/googlelogo.png", width: 50, height: 30,))),
                 // SizedBox(width: 15,),
-                Container(
+                SizedBox(
                   // color: Colors.red,
                   width: 180,
                   child: Center(
@@ -71,14 +71,14 @@ Widget LoginOutlinebutton(String button1Text,String button2Text, Function onPres
           )
 
       ),
-      SizedBox(height: 20,),
+      const SizedBox(height: 20,),
       SizedBox(
         width: double.infinity,
         height: 51,
         child: OutlinedButton(
           onPressed: onPressed as void Function()?,
           style: ElevatedButton.styleFrom(
-            side: BorderSide(color: Color(0xFFE03A3C), width: 1),
+            side: const BorderSide(color: Color(0xFFE03A3C), width: 1),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
@@ -87,12 +87,12 @@ Widget LoginOutlinebutton(String button1Text,String button2Text, Function onPres
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
 
-              Container(
+              SizedBox(
                 // color: Colors.green,
                   width: 80,
                   child: Center(child: Image.asset("assets/images/facebook.png", width: 50, height: 30,))),
               // SizedBox(width: 15,),
-              Container(
+              SizedBox(
                 // color: Colors.red,
                 width: 200,
                 child: Center(

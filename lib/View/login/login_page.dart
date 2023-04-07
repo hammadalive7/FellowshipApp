@@ -20,8 +20,8 @@ class LoginPage extends StatelessWidget {
             // mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 30),
-              Text(
+              const SizedBox(height: 30),
+              const Text(
                 "Email Address or Username",
                 style: TextStyle(
                   fontSize: 16,
@@ -31,10 +31,10 @@ class LoginPage extends StatelessWidget {
 
                 ),
               ),
-              SizedBox(height: 5),
+              const SizedBox(height: 5),
               CustomTextFormField("Your email address or username", false),
-              SizedBox(height: 20),
-              Text(
+              const SizedBox(height: 20),
+              const Text(
                 "Password",
                 style: TextStyle(
                   fontSize: 16,
@@ -44,9 +44,9 @@ class LoginPage extends StatelessWidget {
 
                 ),
               ),
-              SizedBox(height: 5),
+              const SizedBox(height: 5),
               CustomTextFormField("Your password", true),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -55,7 +55,7 @@ class LoginPage extends StatelessWidget {
                       onPressed: () {
                         debugPrint("Forgot Password Pressed");
                       },
-                      child: Text(
+                      child: const Text(
                         "Forgot Password?",
                         style: TextStyle(
                           fontSize: 16,
@@ -69,14 +69,14 @@ class LoginPage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               button("Login", () {
                 debugPrint("Login Pressed");
               }),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   SizedBox(
                     width: 130,
                     child: Divider(
@@ -106,16 +106,16 @@ class LoginPage extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               LoginOutlinebutton("Login with Google","Login with Facebook", () {
                 debugPrint("Login with Google Pressed");
               }),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Don't have an account?",
                       style: TextStyle(
                         fontSize: 16,
@@ -129,7 +129,7 @@ class LoginPage extends StatelessWidget {
                       onPressed: () {
                         debugPrint("Sign Up Pressed");
                       },
-                      child: Text(
+                      child: const Text(
                         "Sign Up",
                         style: TextStyle(
                           fontSize: 16,
