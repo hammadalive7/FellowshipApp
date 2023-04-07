@@ -24,6 +24,7 @@ class _BodyState extends State<Body> {
     _controller.dispose();
     super.dispose();
   }
+
   List<Map<String, String>> onboardData = [
     {
       "text": "Welcome to Bytewise Limited which is a  talented development & community wing aiming towards growth of digital world!",

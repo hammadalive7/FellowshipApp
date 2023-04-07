@@ -1,6 +1,6 @@
 # fellowship_app
 
-app that will be used by Bytewise to host\manage fellowship
+app that will be used by Bytewise to host\manage fellowshipf
 
 ## Getting Started
 
