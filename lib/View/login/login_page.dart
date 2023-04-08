@@ -1,8 +1,12 @@
+import 'package:fellowship_app/View/signup_page.dart';
 import 'package:fellowship_app/components/app_bar.dart';
 import 'package:fellowship_app/components/button.dart';
 import 'package:fellowship_app/components/size_config.dart';
 import 'package:fellowship_app/components/textform_field.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../Forget Password/forget_password_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -53,6 +57,7 @@ class LoginPage extends StatelessWidget {
                   Center(
                     child: TextButton(
                       onPressed: () {
+                        Get.to(() => const ForgetPassword());
                         debugPrint("Forgot Password Pressed");
                       },
                       child: const Text(
@@ -128,6 +133,7 @@ class LoginPage extends StatelessWidget {
                     TextButton(
                       onPressed: () {
                         debugPrint("Sign Up Pressed");
+                        Get.to(() => const SignupScreen());
                       },
                       child: const Text(
                         "Sign Up",

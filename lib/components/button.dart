@@ -11,7 +11,7 @@ Widget button(String buttonText, Function onPressed) {
           borderRadius: BorderRadius.circular(10),
         ),
       ),
-      child: Text(buttonText, style: const TextStyle(fontSize: 22)),
+      child: Text(buttonText, style: const TextStyle(fontSize: 20)),
     ),
   );
 }

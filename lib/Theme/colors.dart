@@ -24,3 +24,5 @@ const MaterialColor accent = MaterialColor(_accentColor, <int, Color>{
   600: Color(0xFF3E3E3E),
 });
 const int _accentColor = 0xFF444444;
+
+const textColor = Color(0xFF444444);
