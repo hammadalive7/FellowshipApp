@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 
 import '../Theme/colors.dart';
 import '../components/button.dart';
+import 'OTPScreen/email_varification.dart';
+import 'OTPScreen/sms_verification.dart';
 
 class ConfirmAccount extends StatelessWidget {
   const ConfirmAccount({Key? key}) : super(key: key);
@@ -37,10 +39,13 @@ class ConfirmAccount extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: Get.height * 0.03),
-
-                button("Send Verification Email", () {}),
+                button("Send Verification Email", () {
+                  Get.to(() => EmailVerification());
+                }),
                 SizedBox(height: Get.height * 0.02),
-                button("Send Verification SMS", () {}),
+                button("Send Verification SMS", () {
+                  Get.to(() => SMSVerification());
+                }),
 
 
               ],
